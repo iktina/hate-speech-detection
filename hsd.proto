@@ -3,7 +3,7 @@ syntax = "proto3";
 package hsd;
 
 message Input {
-    string request = 1;
+    string value = 1;
 }
 
 message Output {
@@ -13,3 +13,4 @@ message Output {
 service HSD {
     rpc detection(Input) returns (Output) {}
 }
+
